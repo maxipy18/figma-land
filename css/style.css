@@ -88,8 +88,8 @@ body {
     margin-bottom: 17px;
 }
 
-.header-inner-subtitle {
-    max-width: 577px;
+.subtitle {
+    max-width: 55%;
     margin: 0 auto;
     padding: 10px;
     font-size: 20px;
@@ -172,11 +172,7 @@ body {
         font-size: 52px;
         font-weight: 400;
         line-height: 62px;
-    }
-
-    .header-inner-subtitle {
-        max-width: 375px;
-    }
+    }    
 
     .header-inner-btns {
         max-width: 181px;
@@ -193,3 +189,121 @@ body {
 /* ======= features ======= */
 
 
+.features {
+    padding: 162px 0;
+    text-align: center;
+}
+
+.title {
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 62px;
+    color: #fff;
+    margin-bottom: 27px;
+}
+
+.feateres-subtitle {
+    margin-bottom: 80px;
+}
+
+.features-contetnt {
+    display: flex;  
+    justify-content: center;    
+}
+
+.features-content__img {
+    position: relative;        
+}
+
+.img-chat-bot {      
+    filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
+}
+
+.img-line-chart {
+    position: absolute;
+    filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
+    bottom: -60px;
+    left: 43%;
+}
+
+.features-content__cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.feature-card {
+    width: 255px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.features-card-title {
+    display: flex; 
+    align-items: flex-start;       
+}
+
+.features-card-title__img {
+    padding-top: 20px;
+}
+
+.feature-card-title__title {
+    max-width: 176px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+}
+
+.feature-card-text {
+    padding: 10px;
+    text-align: left;
+}
+
+@media (max-width: 992px) {
+    .features-contetnt {
+        flex-wrap: wrap;
+    }
+
+    .features-content__img {
+        margin-bottom: 100px;
+    }
+
+    .features-content__cards {
+        align-items: flex-start;
+    }
+
+    .img-line-chart {
+        left: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .features {
+        padding: 50px 0;
+    }
+
+    .features-content__cards {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .feateres-subtitle {
+        margin-bottom: 30px;
+    }
+
+    .img-chat-bot {
+        width: 90%;
+    }
+
+    .img-line-chart {
+        width: 50%;
+        left: 25%;
+    }
+}
