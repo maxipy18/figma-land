@@ -24,6 +24,7 @@ body {
 .header-nav {
     padding: 33px 40px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 35px;
@@ -167,6 +168,10 @@ body {
 }
 
 @media (max-width: 576px) {
+    .header-nav {
+        justify-content: center;
+    }
+
     .header-inner-title {
         max-width: 385px;
         font-size: 52px;
@@ -200,6 +205,10 @@ body {
     line-height: 62px;
     color: #fff;
     margin-bottom: 27px;
+}
+
+.features-title {
+    text-transform: uppercase;
 }
 
 .feateres-subtitle {
@@ -305,5 +314,95 @@ body {
     .img-line-chart {
         width: 50%;
         left: 25%;
+    }
+}
+
+
+/* ======== contents ======== */
+
+
+.contents {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.contents-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.contents-card {
+    max-width: 476px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;    
+}
+
+.contents-card-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #000;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contents-card-subtitle {
+    max-width: 274px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #5C5C5C;
+    padding: 10px;
+}
+
+.contents-btn {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 25px;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid #000;
+    padding: 13px 46px;
+    margin: 57px 0;
+}
+
+.contents-btn:active {
+    background-color: #4452FE;
+    border: 1px solid #4452FE;
+    color: #fff;
+}
+
+.contents-card-img__img {
+    width: 100%;        
+}
+
+.img-board {
+    /* убираем непонятные отступы у второй картинки */
+    margin-top: -24px;
+    margin-bottom: -37px;
+}
+
+
+@media (max-width: 992px) {
+    .contents-card {
+        margin-bottom: 31px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contents-cards {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .contents-card {
+        max-width: 90%;
     }
 }
