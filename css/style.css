@@ -152,6 +152,10 @@ body {
     .burger {
         display: block;
     }
+
+    .header-screens {
+        padding-bottom: 10px;
+    }
 }
 
 @media (max-width: 576px) {
