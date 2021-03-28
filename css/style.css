@@ -505,8 +505,7 @@ body {
     padding: 50px 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; 
+    align-items: center;    
     column-gap: 74px;
     max-width: 832px;   
     margin: 0 auto;    
@@ -536,13 +535,26 @@ body {
     background-color: #4452FE;
 }
 
+@media (max-width: 768px) {
+    .partners-icon-list {
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .partners-icon-list__item {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 576px) {
     .partners-icon-list {
         width: 80%;
         margin: 0 auto;
     }
-    .partners-icon-list-item {        
-        justify-content: space-between;
+    .partners-icon-list__item {        
+        justify-content: space-evenly;
     }
 }
 
@@ -634,5 +646,101 @@ body {
 
     .small-list {
         display: flex;
+    }
+}
+
+
+/* ======= opentype ======== */
+
+
+.opentype {
+    padding: 80px 0;
+    margin-bottom: 100px;
+}
+
+.opentype-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    max-width: 1219px;
+    margin: 0 auto;
+    background-color: #343434;
+    border-radius: 33px;
+}
+
+.opentype-block-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
+}
+
+.open-block-item__title {
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 62px;
+    color: #fff;
+    max-width: 481px;
+    margin: 0 auto;
+    margin-bottom: 37px;
+}
+
+.opentype-btn {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 25px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #000;
+    padding: 13px 67px;
+    max-width: 235px;
+        
+}
+
+.opentype-btn:active {
+    background-color: #4452FE;
+    border: 1px solid #4452FE;
+    color: #fff;
+}
+
+.opentype-block-item__img {
+    width: 100%;
+    border-bottom-right-radius: 33px;
+}
+
+.opentype-block-item__img:last-of-type {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .opentype-block {
+        flex-direction: column;
+        background-color: #1e1e1e;
+        border-radius: 0;
+    }
+
+    .opentype-block-item {
+        width: 100%;
+        padding-top: 104px;
+        justify-content: center;
+    }
+
+    .open-block-item__title {
+        padding: 0 50px;
+        text-align: center;
+    }
+
+    .opentype-block-item__img {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .opentype-block-item__img {
+        display: none;        
+    }
+    .opentype-block-item__img:last-of-type {
+        display: block;
     }
 }
