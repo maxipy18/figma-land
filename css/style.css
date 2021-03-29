@@ -878,3 +878,75 @@ body {
         flex-direction: column;
     }
 }
+
+
+/* ========= modal ======== */
+
+
+.modal {
+    display: none;
+}
+
+.modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0, 0.9);
+
+}
+
+.login-window {    
+    background-color: #fff;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 4px;
+    position: relative;
+    
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 24px;
+    height: 24px;    
+}
+
+.input-password, .input-email {
+    font-size: 16px;
+    font-style: italic;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #434343;
+}
+
+.login-form-btn {
+    margin: 0 auto;
+    padding: 13px 40px;
+    font-size: 17px;
+    font-weight: 700;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.login-form-btn:active {
+    background-color: #4452FE;
+    border: 1px solid #4452FE;
+    color: #fff;
+}
